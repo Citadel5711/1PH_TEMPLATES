@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=52;
+		nextID=53;
 	};
 	class Camera
 	{
-		pos[]={88.180847,17.92098,104.05986};
-		dir[]={0.79123944,-0.60992348,0.04399896};
-		up[]={0.60898298,0.79246002,0.03386404};
-		aside[]={0.055521443,-1.3145836e-008,-0.99845827};
+		pos[]={108.1776,11.152474,121.71078};
+		dir[]={0.66527176,-0.74585241,0.034206174};
+		up[]={0.74487144,0.66610688,0.038299095};
+		aside[]={0.051351126,-3.9726729e-008,-0.99871397};
 	};
 };
 binarizationWanted=0;
-sourceName="1PH_TEMPLATE_200";
+sourceName="1PH_TEMPLATE_v201";
 addons[]=
 {
 	"A3_Misc_F_Helpers",
@@ -60,9 +60,9 @@ addons[]=
 	"modules_f_vietnam",
 	"A3_Modules_F_Curator_Curator",
 	"ww2_spe_missions_p_utilityfunctions_f",
+	"ace_medical_treatment",
 	"A3_Data_F_Curator_Virtual",
-	"A3_Characters_F",
-	"ace_medical_treatment"
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
@@ -234,17 +234,17 @@ class AddonsMetaData
 		};
 		class Item25
 		{
-			className="A3_Data_F_Curator";
-			name="Arma 3 Zeus Update - Main Configuration";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item26
-		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item26
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -288,14 +288,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=14;
+		items=13;
 		class Item0
 		{
 			dataType="Layer";
 			name="Template Items";
 			class Entities
 			{
-				items=101;
+				items=102;
 				class Item0
 				{
 					dataType="Object";
@@ -21088,7 +21088,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="RP_ant_01 attachTo [RPWest, [0.2,-0.9,-1.15]];" \n "RP_ant_01 setDir ((getDir RPWest)+180);";
+						init="RP_ant_01 attachTo [RPWest, [0.2,-0.7,0]];" \n "RP_ant_01 setDir ((getDir RPWest)+180);";
 						name="rp_ant_01";
 					};
 					id=343;
@@ -21338,7 +21338,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="RPspawnArea attachTo [RPWest, [0.0,2.0,-1.18]];";
+						init="RPspawnArea attachTo [RPWest, [0.0,2.0,0]];";
 						name="RPspawnArea";
 					};
 					id=342;
@@ -24049,6 +24049,40 @@ class Mission
 					description="Each individual unit which is assigned to the above team needs the following code in the object initialization:" \n "" \n "this setVariable [""arsenal_ParaHussar"",true];" \n "this setVariable [""slot_ParaHussar"",true];" \n "" \n "Clear this code from the unit's init to remove that unit from the team system.";
 					id=704;
 				};
+				class Item101
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={112,5,121.5};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="rp_med_box_01 attachTo [RPWest, [0.0,-1.3,0]];" \n "rp_med_box_01 setDir ((getDir RPWest)+0);";
+						name="rp_med_box_01";
+					};
+					id=911;
+					type="ACE_medicalSupplyCrate_advanced";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=105;
 		};
@@ -25450,23 +25484,6 @@ class Mission
 			{
 			};
 			id=901;
-		};
-		class Item13
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={112,5,121.5};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="rp_med_box_01 attachTo [RPWest, [0.0,-2.0,-1.18]];" \n "rp_med_box_01 setDir ((getDir RPWest)+180);";
-				name="rp_med_box_01";
-			};
-			id=911;
-			type="ACE_medicalSupplyCrate_advanced";
 		};
 	};
 	class Connections
