@@ -1,0 +1,110 @@
+// https://community.bistudio.com/wiki/Description.ext
+
+disabledAI = 1; // 0: disabled - 1: enabled. Default: 0
+enableDebugConsole = 1; // dangerous in MP
+forceRotorLibSimulation = 2; // Default: 0
+
+author			= "1PH Member";
+onLoadName		= "Mission Name";
+onLoadMission	= "The mission maker describes the mission here.";
+//briefingName 	= "1PH Super Mission Name";
+loadScreen		= "images\loadScreen.paa";
+
+respawn = "BASE";
+respawnButton = 1;
+respawnDelay = 180;
+//respawnVehicleDelay = 180;
+respawnDialog = 0;
+respawnOnStart = 0;
+respawnTemplates[] = { "Ace_Spectator","Counter","Tickets" };
+
+showMap = 1; // 0: disabled - 1: enabled. Default: 1
+showWatch = 1; // 0: disabled - 1: enabled. Default: 1
+
+corpseManagerMode = 1; // Default: 0 for SP, 2 for MP
+corpseLimit = 15; // Default: 15
+corpseRemovalMinTime = 60; // seconds. Default: 10
+corpseRemovalMaxTime = 1200; // seconds. Default: 3600
+wreckManagerMode = 0; // Default: 0 for SP, 2 for MP
+wreckLimit = 10; // seconds. Default: 15
+wreckRemovalMinTime = 60; // seconds. Default: 10
+wreckRemovalMaxTime = 1800; // seconds. Default: 36000 (10 hours)
+minPlayerDistance = 100; // meters. Default: 0
+
+aiKills = 1; // 0: disabled - 1: enabled. Default: 0
+debriefing = 1; // 0: disabled - 1: enabled. Default: 1
+
+disableChannels[] = {
+	{
+		0,		// channel ID
+		false,	// text chat remains enabled
+		true	// voice chat is disabled
+	},
+	{
+		1,		// channel ID
+		false,	// text chat remains enabled
+		true	// voice chat is disabled
+	},
+	{
+		2,		// channel ID
+		false,	// text chat remains enabled
+		true	// voice chat is disabled
+	},
+	{
+		3,		// channel ID
+		false,	// text chat remains enabled
+		true	// voice chat is disabled
+	},
+	{
+		4,		// channel ID
+		false,	// text chat remains enabled
+		true	// voice chat is disabled
+	},
+	{
+		5,		// channel ID
+		true,	// text chat remains enabled
+		true	// voice chat is disabled
+	},
+};
+
+class Header
+{
+	gameType = "Coop";	// Game type
+	//minPlayers =  1;	// minimum number of players the mission supports
+	//maxPlayers = 24;	// maximum number of players the mission supports
+};
+
+class CfgWorlds
+{
+	class Any // or specific world name
+	{
+		//author = "author";
+		//description = "description";
+		//pictureMap = "picturepath";
+		//pictureShot = "picturepath";
+		loadingTexts[] = {
+			
+			"The 1st Para-Hussars Cohort was founded in 1965, modeled loosely on the US Army's 7th Cavalry (Airmobile) Division.",
+			
+			"Corbec is a former French colony in the Green Sea region, granted independence in 1957.",
+			
+			"The islands of Stratis, Everon, and Malden are recent territorial additions to Corbec after the 1977 Rome Accords.",
+			
+			"A small garrison of American troops help defend Everon and Malden from Soviet aggression in the Green Sea.",
+			
+			"As of 1981, Corbec is aligned with, but not a member of, NATO.",
+			
+			"Corbequais citizens speak a mix of English, French, and Chernarussian.  There is a small but growing urban population of Francophone African immigrants in the largest cities.",
+			
+			"The national capital of Corbec is Granbois, a medium-sized city on the coast of the Green Sea.",
+			
+			"Following a civil war, Corbec is divided between the democratic south and the Stalinist Verona in the north.  The two countries are technically still at war."
+			
+			};
+	};
+};
+
+class CfgFunctions
+{
+	#include "scripts\rallyPoint\cfgRally.hpp"
+};

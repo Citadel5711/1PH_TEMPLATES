@@ -1,0 +1,26 @@
+// This is the text in the rally point data terminal at FHQ
+this addAction ["Move to Platoon RP",{[RPWest] spawn AcoRally_fnc_teleport;},"",1,false,true,"","side player == WEST",4];
+
+[RPWestTerminal,3] call BIS_fnc_dataTerminalAnimate;
+
+[RPWestTerminal,"blue","blue","blue"] call BIS_fnc_DataTerminalColor;
+
+this addAction ["Move to Squad RP",{[WsquadRP1] spawn AcoRally_fnc_teleport;},"",1,false,true,"","groupId(group wsl1) == groupId(group player)",4];
+
+this addAction ["Move to Squad RP",{[WsquadRP2] spawn AcoRally_fnc_teleport;},"",1,false,true,"","groupId(group wsl2) == groupId(group player)",4];
+
+this addAction ["Move to Squad RP",{[WsquadRP3] spawn AcoRally_fnc_teleport;},"",1,false,true,"","groupId(group wsl3) == groupId(group player)",4];
+
+
+
+
+// This is the text in the FIA box Rally Point
+this addAction ["Retreat",{[HQ_Retreat_01] spawn AcoRally_fnc_retreat;},"",1,false,true,"","side player == WEST",4];
+
+this addAction ["Move to Squad RP",{[WsquadRP1] spawn AcoRally_fnc_teleport;},"",1,false,true,"","groupId(group wsl1) == groupId(group player)",4];
+
+this addAction ["Move to Squad RP",{[WsquadRP2] spawn AcoRally_fnc_teleport;},"",1,false,true,"","groupId(group wsl2) == groupId(group player)",4];
+
+this addAction ["Move to Squad RP",{[WsquadRP3] spawn AcoRally_fnc_teleport;},"",1,false,true,"","groupId(group wsl3) == groupId(group player)",4];
+
+"RPMARK_1" setmarkerpos RPWest;
