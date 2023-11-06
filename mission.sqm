@@ -20,6 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
+<<<<<<< Updated upstream
 		nextID=53;
 	};
 	class Camera
@@ -28,6 +29,16 @@ class EditorData
 		dir[]={0.66527176,-0.74585241,0.034206174};
 		up[]={0.74487144,0.66610688,0.038299095};
 		aside[]={0.051351126,-3.9726729e-008,-0.99871397};
+=======
+		nextID=56;
+	};
+	class Camera
+	{
+		pos[]={117.68462,16.911551,75.533234};
+		dir[]={-0.017095542,-0.38748449,0.92183697};
+		up[]={-0.0071849385,0.92182451,0.38748553};
+		aside[]={0.9999342,-2.5252439e-007,0.018543188};
+>>>>>>> Stashed changes
 	};
 };
 binarizationWanted=0;
@@ -295,7 +306,7 @@ class Mission
 			name="Template Items";
 			class Entities
 			{
-				items=102;
+				items=101;
 				class Item0
 				{
 					dataType="Object";
@@ -23198,22 +23209,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={98.5,5,116.5};
-					};
-					id=610;
-					type="vn_module_situationalawarenessmodule";
-				};
-				class Item83
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
 						position[]={98.5,5,118.5};
 					};
 					id=611;
 					type="vn_module_dynamicradiomusic";
 				};
-				class Item84
+				class Item83
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -23293,7 +23294,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item85
+				class Item84
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -23372,7 +23373,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item86
+				class Item85
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -23451,7 +23452,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item87
+				class Item86
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -23478,7 +23479,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item88
+				class Item87
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -23489,7 +23490,7 @@ class Mission
 					description="This module, when left in-game, will add code to the recruited units spawned in.  If you want the recruited units to die normally, delete this code.  If you want the AI spawned in to also be subject to Citadel's Triage System, leave this logic in.";
 					id=616;
 				};
-				class Item89
+				class Item88
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -23500,7 +23501,7 @@ class Mission
 					description="This module, when left in-game, will add code to players which make them subject to Citadel's Triage System.  This system places an AI dummy at the location of the players' death which cannot be awoken (simulated catastrophic and/or fatal injury), but can be carried, loaded, or transported like an unconscious patient, all without having an actual player staring at a blank screen." \n "" \n "To disable, delete this module.  If you also want to disable this effect on friendly AI, delete the next module over, as well.";
 					id=617;
 				};
-				class Item90
+				class Item89
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -23511,7 +23512,7 @@ class Mission
 					description="These modules add a few extra features to the game, but don't need their own category.  Feel free to edit or delete, but you may turn off a feature you like without knowing if you do.";
 					id=618;
 				};
-				class Item91
+				class Item90
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -23522,7 +23523,7 @@ class Mission
 					id=619;
 					type="Logic";
 				};
-				class Item92
+				class Item91
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -23533,12 +23534,12 @@ class Mission
 					id=620;
 					type="Logic";
 				};
-				class Item93
+				class Item92
 				{
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={96.5,5,114.5};
+						position[]={98.5,5,116.5};
 					};
 					id=629;
 					type="SPE_Module_AI_Systems";
@@ -23972,7 +23973,7 @@ class Mission
 						nAttributes=30;
 					};
 				};
-				class Item94
+				class Item93
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -23983,7 +23984,7 @@ class Mission
 					description="This game logic adds 10 tickets to each of the three sides (meaning players on different sides can have different respawn counts).  Modify the number here if you want a fixed number for the play session.  Set to 0 to disable respawns (or modify options in description.ext).  Set to a high number (like 999) to effectively make unlimited respawns, or, again, modify options in description.ext.";
 					id=649;
 				};
-				class Item95
+				class Item94
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -23994,7 +23995,7 @@ class Mission
 					id=650;
 					type="Logic";
 				};
-				class Item96
+				class Item95
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -24005,7 +24006,7 @@ class Mission
 					description="Each individual unit which is assigned to the above team needs the following code in the object initialization:" \n "" \n "this setVariable [""arsenal_Cavalry"",true];" \n "this setVariable [""slot_Cavalry"",true];" \n "" \n "Clear this code from the unit's init to remove that unit from the team system.";
 					id=651;
 				};
-				class Item97
+				class Item96
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -24016,7 +24017,7 @@ class Mission
 					description="Each individual unit which is assigned to the above team needs the following code in the object initialization:" \n "" \n "this setVariable [""arsenal_AirSquadron"",true];" \n "this setVariable [""slot_AirSquadron"",true];" \n "" \n "Clear this code from the unit's init to remove that unit from the team system.";
 					id=655;
 				};
-				class Item98
+				class Item97
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -24027,7 +24028,7 @@ class Mission
 					description="Each individual unit which is assigned to the above team needs the following code in the object initialization:" \n "" \n "this setVariable [""arsenal_Pathfinder"",true];" \n "this setVariable [""slot_Pathfinder"",true];" \n "" \n "Clear this code from the unit's init to remove that unit from the team system.";
 					id=656;
 				};
-				class Item99
+				class Item98
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -24038,7 +24039,7 @@ class Mission
 					description="Each individual unit which is assigned to the above team needs the following code in the object initialization:" \n "" \n "this setVariable [""arsenal_Straphanger"",true];" \n "this setVariable [""slot_Straphanger"",true];" \n "" \n "Clear this code from the unit's init to remove that unit from the team system.";
 					id=657;
 				};
-				class Item100
+				class Item99
 				{
 					dataType="Comment";
 					class PositionInfo
@@ -24049,7 +24050,7 @@ class Mission
 					description="Each individual unit which is assigned to the above team needs the following code in the object initialization:" \n "" \n "this setVariable [""arsenal_ParaHussar"",true];" \n "this setVariable [""slot_ParaHussar"",true];" \n "" \n "Clear this code from the unit's init to remove that unit from the team system.";
 					id=704;
 				};
-				class Item101
+				class Item100
 				{
 					dataType="Object";
 					class PositionInfo
