@@ -32,7 +32,7 @@ getposASL SSS_airItems_01,     //Location of the airlift start
         clearBackpackCargoGlobal _this;
 		[_this, 6] remoteExec ["ace_cargo_fnc_setSpace",0,true];
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
-		[_this,["Open Arsenal Box","[(_this select 0)] execVM 'scripts\setup\timedArsenalBox.sqf'",[],1.5,false,true,"","_this distance _target < 2"]] remoteExec ["addAction",0];	
+		[_this,["Open Arsenal Box","[(_this select 0)] execVM 'scripts\timedArsenalBall.sqf'",[],1.5,false,true,"","_this distance _target < 2"]] remoteExec ["addAction",0];	
     }], 
    
 	["FlexibleTank_01_forest_F","Vehicle Fuel","\A3\Ui_f\data\IGUI\Cfg\simpleTasks\types\refuel_ca.paa",{ 
@@ -174,7 +174,7 @@ getposASL SSS_airItems_01,     //Location of the airlift start
         clearBackpackCargoGlobal _this;
 		[_this, 6] remoteExec ["ace_cargo_fnc_setSpace",0,true];
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
-		[_this,["Open Arsenal Box","[(_this select 0)] execVM 'scripts\setup\timedArsenalBox.sqf'",[],1.5,false,true,"","_this distance _target < 2"]] remoteExec ["addAction",0];	
+		[_this,["Open Arsenal Box","[(_this select 0)] execVM 'scripts\timedArsenalBall.sqf'",[],1.5,false,true,"","_this distance _target < 2"]] remoteExec ["addAction",0];	
     }], 
    
 	["FlexibleTank_01_forest_F","Vehicle Fuel","\A3\Ui_f\data\IGUI\Cfg\simpleTasks\types\refuel_ca.paa",{ 
@@ -316,7 +316,7 @@ getposASL SSS_airItems_01,     //Location of the airlift start
         clearBackpackCargoGlobal _this;
 		[_this, 6] remoteExec ["ace_cargo_fnc_setSpace",0,true];
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
-		[_this,["Open Arsenal Box","[(_this select 0)] execVM 'scripts\setup\timedArsenalBox.sqf'",[],1.5,false,true,"","_this distance _target < 2"]] remoteExec ["addAction",0];	
+		[_this,["Open Arsenal Box","[(_this select 0)] execVM 'scripts\timedArsenalBall.sqf'",[],1.5,false,true,"","_this distance _target < 2"]] remoteExec ["addAction",0];	
     }], 
    
 	["FlexibleTank_01_forest_F","Vehicle Fuel","\A3\Ui_f\data\IGUI\Cfg\simpleTasks\types\refuel_ca.paa",{ 
