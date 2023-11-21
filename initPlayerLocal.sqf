@@ -131,6 +131,23 @@ if (isNil {player getVariable "slot_Cavalry"}) then {} else {
 [player, 1, ["ACE_SelfActions","1PH"], _dropSystemTarp] call ace_interact_menu_fnc_addActionToObject;
 };
 
+// Adds ability to track OPFOR units.
+_playerTrackingOpfor = ["playerTrackingOpfor","Check for tracks","",
+	{
+
+		[player, "Acts_Ambient_Picking_Up",1] call ace_common_fnc_doAnimation;
+		
+		[10,[],{[player,300] execVM "scripts\pathFinderTracking.sqf";}
+		,
+		{hint "Tracking cancelled"},"Checking for tracks"] call ace_common_fnc_progressBar
+				
+		
+	},{true}] call ace_interact_menu_fnc_createAction;
+
+if (isNil {player getVariable "slot_PathFinder"}) then {} else {
+[player, 1, ["ACE_SelfActions","1PH"], _playerTrackingOpfor] call ace_interact_menu_fnc_addActionToObject;
+};
+
 //This enables Citadel's Triage System if the module is present
 if (!isNil "citadelsTriageSystemModule_01") then {
 	player addMPEventHandler ["MPKilled", { 
