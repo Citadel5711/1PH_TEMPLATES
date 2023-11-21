@@ -268,11 +268,19 @@ getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degre
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
     }], 
   
+	"B_BLUCW_80_ACH_47A_Guns_AGo_Go_M200_01", 
+	"B_BLUCW_80_ACH_47A_Guns_AGo_Go_XM18_01", 
+	"B_BLUCW_80_AH1G_01", 
+	"B_BLUCW_80_CH_47A_Chinook_01", 
 	"B_BLUCW_80_CH_47A_Chinook_M60_01", 
 	"B_BLUCW_80_CH_47A_Chinook_M60_Cargo_01", 
-	"B_BLUCW_80_CH34_FFAR_01", 
-	"B_BLUCW_80_CH34_Transport_01", 
-	"B_BLUCW_80_CH34_Transport_02",
+	"B_BLUCW_80_UH_1B_Iroquios_Dust_off_01", 
+	"B_BLUCW_80_UH_1B_Iroquois_Slick_01", 
+	"B_BLUCW_80_UH_1C_Iroquois_Gunship_01", 
+	"B_BLUCW_80_UH_1C_Iroquois_Heavy_Hog_01", 
+	"B_BLUCW_80_UH_1C_Iroquois_Hog_01", 
+	"B_BLUCW_80_UH_1D_Iroquios_Dust_off_01", 
+	"B_BLUCW_80_UH_1D_Iroquois_Bushranger_01",
 	
 	["B_supplyCrate_F","=== WOODLAND ===","",{ 
         clearItemCargoGlobal _this; 
