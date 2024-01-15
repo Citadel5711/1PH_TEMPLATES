@@ -54,10 +54,18 @@ getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degre
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
     }], 
 	
-	"B_BLUCW_80_M151A1_Transport_01", 
-	"B_BLUCW_80_M151A1_Transport_Covered_01", 
-	"B_BLUCW_80_M54_Transport_01", 
-	"B_BLUCW_80_M54_Transport_Covered_01"
+	"B_BLUCW_90_MOTORCYCLE_01", 
+	"B_BLUCW_90_JEEP_MG_01", 
+	"B_BLUCW_90_JEEP_TRANS_01", 
+	"B_BLUCW_90_JEEP_TRANS_02", 
+	"B_BLUCW_90_TRUCK_FLATBED_MG_01", 
+	"B_BLUCW_90_TRUCK_MEDIC_01", 
+	"B_BLUCW_90_TRUCK_REPAIR_01", 
+	"B_BLUCW_90_TRUCK_TRANSPORT_01", 
+	"B_BLUCW_90_5T_TRUCK_AMMO_01", 
+	"B_BLUCW_90_5T_TRUCK_FLATBED_01", 
+	"B_BLUCW_90_5T_TRUCK_FUEL_01", 
+	"B_BLUCW_90_5T_TRUCK_TRANSPORT_01"
 	
 	/*
 	["B_supplyCrate_F","=== DESERT ===","",{ 
@@ -139,35 +147,36 @@ getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degre
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
     }], 
 	
-	"B_BLUCW_80_M113A1_Transport_01", 
-	"B_BLUCW_80_M125A1_M29_Mortar_01", 
-	"B_BLUCW_80_M132A1_Flamethrower_01", 
-	"B_BLUCW_80_M577A1_Ambulance_01", 
-	"B_BLUCW_80_M577A1_Command_01", 
-	"B_BLUCW_80_M41_Walker_01", 
-	"B_BLUCW_80_M109_Command_Truck_01", 
-	"B_BLUCW_80_M151A1_Armored_01", 
-	"B_BLUCW_80_M151A1_M2_01", 
-	"B_BLUCW_80_M151A1_M40A1_01", 
-	"B_BLUCW_80_M151A1_Patrol_01", 
-	"B_BLUCW_80_M151A1_Transport_01", 
-	"B_BLUCW_80_M151A1_Transport_Covered_01", 
-	"B_BLUCW_80_M185_Repair_Truck_01", 
-	"B_BLUCW_80_M49_Fuel_Truck_01", 
-	"B_BLUCW_80_M54_Ammo_Truck_01", 
-	"B_BLUCW_80_M54_Transport_01", 
-	"B_BLUCW_80_M54_Transport_Covered_01", 
-	"B_BLUCW_80_M55_AA_Truck_Quad_01", 
-	"B_BLUCW_80_M101_105mm_Howitzer_01", 
-	"B_BLUCW_80_M2_60mm_Mortar_01", 
-	"B_BLUCW_80_M29_81mm_Mortar_01", 
-	"B_BLUCW_80_M101_105mm_Anti_tank_gun_01", 
-	"B_BLUCW_80_M1919A4_30cal_High_01", 
-	"B_BLUCW_80_M1919A4_30cal_Low_01", 
-	"B_BLUCW_80_M1919A6_30cal_01", 
-	"B_BLUCW_80_M2HB_50cal_High_01", 
-	"B_BLUCW_80_M2HB_50cal_Low_01", 
-	"B_BLUCW_80_M40A1_106mm_Recoilless_Rifle_01"
+	"B_BLUCW_90_M113_MG_01", 
+	"B_BLUCW_90_LUCHSA1_01", 
+	"B_BLUCW_90_LUCHSA2_01", 
+	"B_BLUCW_90_FUCHS_COMMAND_01", 
+	"B_BLUCW_90_FUCHS_ENGINEER_01", 
+	"B_BLUCW_90_FUCHS_RECON_01", 
+	"B_BLUCW_90_M101_HOWITZER_01", 
+	"B_BLUCW_90_M113_MORTAR_01", 
+	"B_BLUCW_90_M2_MORTAR_01", 
+	"B_BLUCW_90_M29_MORTAR_01", 
+	"B_BLUCW_90_MOTORCYCLE_01", 
+	"B_BLUCW_90_JEEP_MG_ARMORED_01", 
+	"B_BLUCW_90_JEEP_MG_01", 
+	"B_BLUCW_90_JEEP_PATROL_01", 
+	"B_BLUCW_90_JEEP_TOW_01", 
+	"B_BLUCW_90_JEEP_TRANS_01", 
+	"B_BLUCW_90_JEEP_TRANS_02", 
+	"B_BLUCW_90_TRUCK_FLATBED_MG_01", 
+	"B_BLUCW_90_TRUCK_MEDIC_01", 
+	"B_BLUCW_90_TRUCK_REPAIR_01", 
+	"B_BLUCW_90_TRUCK_TRANSPORT_01", 
+	"B_BLUCW_90_5T_TRUCK_AMMO_01", 
+	"B_BLUCW_90_5T_TRUCK_FLATBED_01", 
+	"B_BLUCW_90_5T_TRUCK_FUEL_01", 
+	"B_BLUCW_90_5T_TRUCK_TRANSPORT_01", 
+	"B_BLUCW_90_TOW_TURRET_01", 
+	"B_BLUCW_90_M2_TURRET_HIGH_01", 
+	"B_BLUCW_90_M2_TURRET_LOW_01", 
+	"B_BLUCW_90_M60_TURET_HIGH_01", 
+	"B_BLUCW_90_M60_TURRET_LOW_01"
 	
 	/*
 	["B_supplyCrate_F","=== DESERT ===","",{ 
@@ -268,19 +277,21 @@ getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degre
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
     }], 
   
-	"B_BLUCW_80_ACH_47A_Guns_AGo_Go_M200_01", 
-	"B_BLUCW_80_ACH_47A_Guns_AGo_Go_XM18_01", 
-	"B_BLUCW_80_AH1G_01", 
-	"B_BLUCW_80_CH_47A_Chinook_01", 
-	"B_BLUCW_80_CH_47A_Chinook_M60_01", 
-	"B_BLUCW_80_CH_47A_Chinook_M60_Cargo_01", 
-	"B_BLUCW_80_UH_1B_Iroquios_Dust_off_01", 
-	"B_BLUCW_80_UH_1B_Iroquois_Slick_01", 
-	"B_BLUCW_80_UH_1C_Iroquois_Gunship_01", 
-	"B_BLUCW_80_UH_1C_Iroquois_Heavy_Hog_01", 
-	"B_BLUCW_80_UH_1C_Iroquois_Hog_01", 
-	"B_BLUCW_80_UH_1D_Iroquios_Dust_off_01", 
-	"B_BLUCW_80_UH_1D_Iroquois_Bushranger_01",
+	"B_BLUCW_90_GUNSAGOGO_04", 
+	"B_BLUCW_90_GUNSAGOGO_05", 
+	"B_BLUCW_90_COBRA_01_BASE_02", 
+	"B_BLUCW_90_LITTLEBIRD_02", 
+	"B_BLUCW_90_CHINOOK_04", 
+	"B_BLUCW_90_CHINOOK_03", 
+	"B_BLUCW_90_CHINOOK_02", 
+	"B_BLUCW_90_LITTLEBIRD_01", 
+	"B_BLUCW_90_HUEY_MED_01", 
+	"B_BLUCW_90_HUEY_07", 
+	"B_BLUCW_90_HUEY_02", 
+	"B_BLUCW_90_UH60_01", 
+	"B_BLUCW_90_UH60_02", 
+	"B_BLUCW_90_UH60_03",
+	"B_BLUCW_90_F4C_01",
 	
 	["B_supplyCrate_F","=== WOODLAND ===","",{ 
         clearItemCargoGlobal _this; 
@@ -291,13 +302,17 @@ getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degre
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
     }], 
 	
-	"B_BLUCW_80_M151A1_Transport_01", 
-	"B_BLUCW_80_M151A1_Transport_Covered_01", 
-	"B_BLUCW_80_M185_Repair_Truck_01", 
-	"B_BLUCW_80_M49_Fuel_Truck_01", 
-	"B_BLUCW_80_M54_Ammo_Truck_01", 
-	"B_BLUCW_80_M54_Transport_01", 
-	"B_BLUCW_80_M54_Transport_Covered_01"
+	"B_BLUCW_90_MOTORCYCLE_01", 
+	"B_BLUCW_90_JEEP_TRANS_01", 
+	"B_BLUCW_90_JEEP_TRANS_02", 
+	"B_BLUCW_90_TRUCK_FLATBED_MG_01", 
+	"B_BLUCW_90_TRUCK_MEDIC_01", 
+	"B_BLUCW_90_TRUCK_REPAIR_01", 
+	"B_BLUCW_90_TRUCK_TRANSPORT_01", 
+	"B_BLUCW_90_5T_TRUCK_AMMO_01", 
+	"B_BLUCW_90_5T_TRUCK_FLATBED_01", 
+	"B_BLUCW_90_5T_TRUCK_FUEL_01", 
+	"B_BLUCW_90_5T_TRUCK_TRANSPORT_01"
 	
 	/*
 	["B_supplyCrate_F","=== DESERT ===","",{ 
@@ -382,10 +397,19 @@ getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degre
 		[_this, true, [0, 2, 0.5], 45] remoteExec ["ace_dragging_fnc_setDraggable",0,true];
     }],
 	
-	"B_BLUCW_80_M151A1_Transport_01", 
-	"B_BLUCW_80_M151A1_Transport_Covered_01", 
-	"B_BLUCW_80_Legionnaire_01", 
-	"B_BLUCW_80_M151A1_Patrol_01"
+	"B_BLUCW_90_MOTORCYCLE_01", 
+	"B_BLUCW_90_JEEP_MG_01", 
+	"B_BLUCW_90_JEEP_PATROL_01", 
+	"B_BLUCW_90_JEEP_TRANS_01", 
+	"B_BLUCW_90_JEEP_TRANS_02", 
+	"B_BLUCW_90_TRUCK_FLATBED_MG_01", 
+	"B_BLUCW_90_TRUCK_MEDIC_01", 
+	"B_BLUCW_90_TRUCK_REPAIR_01", 
+	"B_BLUCW_90_TRUCK_TRANSPORT_01", 
+	"B_BLUCW_90_5T_TRUCK_AMMO_01", 
+	"B_BLUCW_90_5T_TRUCK_FLATBED_01", 
+	"B_BLUCW_90_5T_TRUCK_FUEL_01", 
+	"B_BLUCW_90_5T_TRUCK_TRANSPORT_01"
 	
 ]},
 // This is the end of the menu for droppable items.
