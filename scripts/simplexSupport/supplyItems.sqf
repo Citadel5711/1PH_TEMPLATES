@@ -4,7 +4,7 @@ sleep 10;
 
 //Adds custom Hussar-only supply spawning
 [
-getposASL SSS_SupplyItems_01, //Code which tells the game where to put the crate     
+getposATL SSS_SupplyItems_01, //Code which tells the game where to put the crate     
 getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degrees) to point the spawned item
 "Supplies and Vehicles (Para-Hussar)",//Callsign of service
 // Below is the menu for droppable items.      
@@ -97,7 +97,7 @@ sleep 1;
 
 //Adds custom cav-only supply spawning
 [
-getposASL SSS_SupplyItems_01, //Code which tells the game where to put the crate     
+getposATL SSS_SupplyItems_01, //Code which tells the game where to put the crate     
 getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degrees) to point the spawned item
 "Supplies and Vehicles (Cavalry)",//Callsign of service
 // Below is the menu for droppable items.      
@@ -227,7 +227,7 @@ sleep 1;
 
 //Adds custom air-only supply spawning
 [
-getposASL SSS_SupplyItems_01, //Code which tells the game where to put the crate     
+getposATL SSS_SupplyItems_01, //Code which tells the game where to put the crate     
 getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degrees) to point the spawned item
 "Supplies and Vehicles (Air Squadron)",//Callsign of service
 // Below is the menu for droppable items.      
@@ -348,7 +348,7 @@ sleep 1;
 
 //Adds custom pathfinder-only supply spawning
 [
-getposASL SSS_SupplyItems_01, //Code which tells the game where to put the crate     
+getposATL SSS_SupplyItems_01, //Code which tells the game where to put the crate     
 getDir SSS_SupplyItems_01, //Code which tells the game which direction (in degrees) to point the spawned item
 "Supplies and Vehicles (Pathfinder)",//Callsign of service
 // Below is the menu for droppable items.      
