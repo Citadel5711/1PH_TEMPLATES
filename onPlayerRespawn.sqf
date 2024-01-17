@@ -12,23 +12,28 @@ waitUntil {sleep 5; (alive _newUnit)};
 if (_newUnit getVariable "slot_ParaHussar") then {
 	setPlayerRespawnTime 90;
 	_newUnit setUnitTrait ["loadCoef", 0.75];
-	_newUnit setVariable ["ace_medical_damageThreshold", 1.5, true];	
+	_newUnit setVariable ["ace_medical_damageThreshold", 1.5, true];
+	[0.85,0.65,0.45,0.65] execVM "scripts\stealthAdjust.sqf";	
 	};
 	
 if (_newUnit getVariable "slot_AirSquadron") then {
 	setPlayerRespawnTime 180;
 	_newUnit setUnitTrait ["loadCoef", 1.00];
-	_newUnit setVariable ["ace_medical_damageThreshold", 1.0, true];	
+	_newUnit setVariable ["ace_medical_damageThreshold", 1.0, true];
+	[0.85,0.65,0.45,0.65] execVM "scripts\stealthAdjust.sqf";
 	};
 	
 if (_newUnit getVariable "slot_Cavalry") then {
 	setPlayerRespawnTime 180;
 	_newUnit setUnitTrait ["loadCoef", 0.75];
 	_newUnit setVariable ["ace_medical_damageThreshold", 1.0, true];	
+	[0.85,0.65,0.45,0.65] execVM "scripts\stealthAdjust.sqf";
 	};
 
 if (_newUnit getVariable "slot_Pathfinder") then {
 	setPlayerRespawnTime 180;
 	_newUnit setUnitTrait ["loadCoef", 0.75];
-	_newUnit setVariable ["ace_medical_damageThreshold", 1.0, true];	
+	_newUnit setVariable ["ace_medical_damageThreshold", 1.0, true];
+	_newUnit setVariable ["ace_medical_medicClass",1, true];	
+	[0.65,0.45,0.25,0.45] execVM "scripts\stealthAdjust.sqf";
 	};

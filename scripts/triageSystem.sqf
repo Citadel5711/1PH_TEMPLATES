@@ -32,6 +32,7 @@ _newUnit setUnitLoadout getUnitLoadout _unit;
 
 sleep 1;
 
+moveOut _unit;
 _unitPosition = getPosATL _unit;
 _unit setPosATL (getPosATL _newUnit);
 
