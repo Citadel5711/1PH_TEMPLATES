@@ -51,9 +51,10 @@ sleep 1;
 // ===== AI QoL =====
 
 if (!isNil "AIQoLModule_01") then {
-_unit addaction 
+
+[_unit,  
  [  
- "<t color='#8bd9d9'>Unstick Unit</t>",
+ "<t color='#d9d68b'>Unstick Unit</t>",
 	{
 		_stuckUnit = (_this select 0);
 		_unitGroup = group _stuckUnit;
@@ -70,16 +71,17 @@ _unit addaction
   "",  
   "side player == WEST",  
   6 
-  ];
+  ]
+] remoteExec ["addAction",0,true];
 
 sleep 1;
 
-_unit addAction
+[_unit,  
  [  
- "<t color='#d5d98b'>Dismiss Unit</t>",
+ "<t color='#8bd9d9'>Dismiss Unit</t>",
 	{
 		_stuckUnit = (_this select 0);
-		deleteVehicle _stuckUnit;
+		deleteVehicle _stuckUnit;		
 	},  
   [],  
   1.5,  
@@ -88,7 +90,9 @@ _unit addAction
   "",  
   "side player == WEST",  
   6 
-  ];
+  ]
+] remoteExec ["addAction",0,true];
+
   
 };
 

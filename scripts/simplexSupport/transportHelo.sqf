@@ -13,7 +13,6 @@ tran_helo_1,
 {
 	(group _this) setVariable ["zhc_offload_blacklisted",true,true]; 
 	(group _this) setVariable ["acex_headless_blacklist",true,true];
-	_this enableRopeAttach false;
 	}, //Custom init code.
 ["itemMap"],  //Access items.  Player must have one to use the asset remotely.
 "true", //Access condition.  Variable must be true if player can use asset.
@@ -29,7 +28,6 @@ tran_helo_2,
 {
 	(group _this) setVariable ["zhc_offload_blacklisted",true,true]; 
 	(group _this) setVariable ["acex_headless_blacklist",true,true];
-	_this enableRopeAttach false;
 	}, //Custom init code.
 ["itemMap"],  //Access items.  Player must have one to use the asset remotely.
 "true", //Access condition.  Variable must be true if player can use asset.
@@ -45,7 +43,6 @@ tran_helo_3,
 {
 	(group _this) setVariable ["zhc_offload_blacklisted",true,true]; 
 	(group _this) setVariable ["acex_headless_blacklist",true,true];
-	_this enableRopeAttach false;
 	}, //Custom init code.
 ["itemMap"],  //Access items.  Player must have one to use the asset remotely.
 "true", //Access condition.  Variable must be true if player can use asset.
@@ -59,7 +56,6 @@ tran_helo_5,
 {
 	(group _this) setVariable ["zhc_offload_blacklisted",true,true]; 
 	(group _this) setVariable ["acex_headless_blacklist",true,true];
-	_this enableRopeAttach false;
 	}, //Custom init code.
 ["itemMap"],  //Access items.  Player must have one to use the asset remotely.
 "true", //Access condition.  Variable must be true if player can use asset.
