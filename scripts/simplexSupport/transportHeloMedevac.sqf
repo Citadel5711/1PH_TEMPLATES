@@ -15,7 +15,6 @@ tran_helo_4,
 (group _this) setVariable ["zhc_offload_blacklisted",true,true];
 (group _this) setVariable ["acex_headless_blacklist",true,true];
 (group driver _this) setVariable ["daoExclude",true, true];
-_this enableRopeAttach false;
 
 [_this,  
  [  
